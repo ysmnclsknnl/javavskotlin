@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "npm": "^10.1.0",
+    "reveal-md": "^5.5.1"
+  }
+}
