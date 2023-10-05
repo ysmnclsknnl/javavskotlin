@@ -1,8 +1,10 @@
 <!-- .slide: data-background="./assets/kotlinvsjava.png" -->
+---
+
 <!-- .slide: style="font-size: 32px; border:1px, solid, black; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;" -->
 
-Yasemin Caliskan\
-Backend Intern CodeStar
+Yasemin Çalışkan\
+Backend Intern @ CodeStar
 ---
 ### Three Aspects Of The Comparison
 
@@ -125,9 +127,6 @@ List<String> imageUrls = List.of(
         ObjectId id = new ObjectId();
         String petName = faker.cat().name();
         String description = faker.cat().breed();
-        Integer age = faker.number().numberBetween(0, 10);
-        Type type = Type.CAT;
-        Boolean adopted = faker.bool().bool();
         int randomIndex = faker.number().numberBetween(0, imageUrls.size());
         String photoLink = imageUrls.get(randomIndex);
 
@@ -151,9 +150,7 @@ Figure 5 - Java Create Pet Method
         return Pet(
             name = faker.cat().name(),
             description = faker.cat().breed(),
-            age = faker.number().numberBetween(0, 10),
-            type = PetType.CAT,
-            adopted = faker.bool().bool(),
+            ...
             photoLink = imageUrls.random(),
         )
     }
@@ -163,8 +160,7 @@ Figure 6 - Kotlin Create Pet Method
 <!-- .slide: style="font-size: 32px;"> -->
 ## Summary Of Conciseness Experience
 
-- Lombok Sucks! 
-  From the beginning, requiring an extra library to reduce boilerplate code is a major drawback in Java!
+- From the beginning, needing an extra library to reduce boilerplate code is a major drawback in Java!
 - Named parameters, scope functions and list methods are really powerful built-in features to make code concise in Kotlin! 
 
 ---
@@ -217,7 +213,7 @@ Figure 8 - Kotlin getValidationExceptions & addPet Functions
 ---
 <!-- .slide: style="font-size: 32px;"> -->
 ## Functional Programming
-- Java is original designed for imperative programming, so I had to search for methods or keywords to use functional programming in Java.
+- Java is originally designed for imperative programming, so I had to search for methods or keywords to apply functional programming principles in Java.
 - Kotlin is designed to support functional programming. Data structures are immutable by default and methods avoid object mutation in Kotlin.
 So I just focused on the logic of the code.
 
